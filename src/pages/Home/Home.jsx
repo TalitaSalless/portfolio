@@ -6,17 +6,26 @@ import Foto from "../../assets/Foto.png";
 export function Home() {
   return (
     <>
-    <Header />
-      <main className="container-home" >
-
+      <Header />
+      <main className="container-home">
         <div className="container-infos">
           <div className="profile-section">
-            <img src={Foto} alt="" />
+            <img src={Foto} />
             <h1>Desenvolvedora front-end</h1>
           </div>
 
           <div className="about-section">
-            <p>Sou desenvolvedora front-end, apaixonada por criar soluções inovadoras e elegantes para a web. Tenho experiência com as principais tecnologias do mercado, como HTML, CSS, JavaScript, React, TypeScript. Formada em análise e desenvolvimento de sistemas e curso de especialização em ciência de dados. Sou uma profissional dedicada, criativa, comunicativa e flexível, estou sempre em busca de atualizações para aprender novas ferramentas e metodologias, facilidade para o trabalho em equipe e para enfrentar desafios. Meu objetivo é contribuir para o desenvolvimento de projetos de qualidade e impacto, que atendam às necessidades dos clientes e usuários.</p>
+            <p>
+              Sou apaixonada por criar soluções inovadoras e elegantes para a
+              web, com experiência em HTML, CSS, JavaScript, React e TypeScript.
+              Formada em Análise e Desenvolvimento de Sistemas, com
+              especialização em Ciência de Dados. Sou dedicada, criativa,
+              comunicativa e flexível, sempre em busca de aprender novas
+              ferramentas e metodologias. Valorizo o trabalho em equipe e adoro
+              enfrentar desafios. Meu objetivo é contribuir para projetos de
+              qualidade e impacto, atendendo às necessidades dos clientes e
+              usuários.
+            </p>
             <div className="icon-container">
               <i className="fab fa-html5"></i>
               <i className="fab fa-css3-alt"></i>
@@ -33,7 +42,6 @@ export function Home() {
             </div>
           </div>
         </div>
-
       </main>
       <Footer />
     </>

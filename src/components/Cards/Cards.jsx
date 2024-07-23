@@ -11,13 +11,13 @@ export function Cards() {
         githubLink="https://github.com/TalitaSalless/Projeto-Marvel-DevWeek"
       />
       <Card
-        projectName="Pokemon"
+        projectName="Pokémon"
         projectImage="https://github.com/TalitaSalless/Pokemon/raw/main/public/screen.png"
         projectLink="https://github.com/TalitaSalless/Pokemon"
         githubLink="https://github.com/TalitaSalless/Pokemon"
       />
       <Card
-        projectName="Landing Page Agencia "
+        projectName="Landing Page Agência "
         projectImage="https://github.com/TalitaSalless/landing-page-agencia/raw/main/images/talitasalless.github.io_landing-page-agencia_.png"
         projectLink="https://talitasalless.github.io/landing-page-agencia/"
         githubLink="https://github.com/TalitaSalless/landing-page-agencia"

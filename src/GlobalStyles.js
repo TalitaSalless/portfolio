@@ -1,4 +1,3 @@
-// GlobalStyles.js
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -18,23 +17,35 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-image: url(../../../public/background-portfolio.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: var(--bg-color); */
     color: var(--text-color);
   }
+
   body a {
   color: #777;
   text-decoration: none;
   transition: 0.4s;
   }
+  
   body ul {
   list-style: none;
   }
+  footer {
+    text-align: center;
+    padding-bottom: 2rem;
 
-  .gallery {
+    span {
+      font-weight: bold;
+      color: var(--secondary-color);
+    }
+  }
+`;
+
+export default GlobalStyle;
+
+
+
+
+/* .gallery {
     max-width: var(--container-width);
     margin: 0 auto;
     display: flex;
@@ -72,52 +83,4 @@ const GlobalStyle = createGlobalStyle`
         }
       }
     }
-
-    /* Adicione o restante dos estilos para os cards aqui */
-
-  }
-
-  footer {
-    text-align: center;
-    padding-bottom: 2rem;
-
-    span {
-      font-weight: bold;
-      color: var(--secondary-color);
-    }
-  }
-`;
-
-export const mixins = {
-  container: `
-    max-width: var(--container-width);
-    padding: 1.5rem 0;
-    margin: 0 auto;
-  `,
-  flexCenter: `
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  `,
-  bgImg: (img) => `
-    background-image: url('../img/${img}');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
-    transition: 0.6s;
-
-    &:hover {
-      background-size: 110%;
-      filter: grayscale(0%);
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/${img}');
-    }
-  `,
-  mobile: (content) => `
-    @media (max-width: 425px) {
-      ${content}
-    }
-  `,
-};
-
-export default GlobalStyle;
+  } */

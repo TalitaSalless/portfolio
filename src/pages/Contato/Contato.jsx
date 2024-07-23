@@ -43,11 +43,7 @@ export function Contato() {
         <div className="texto">
           <h2 className="section-title">Entre em Contato</h2>
           <p className="section-description">
-            Seja bem-vindo(a) ao meu mundo criativo! Estou ansioso(a) para ouvir
-            suas ideias, responder suas perguntas ou apenas trocar algumas
-            palavras inspiradoras. Por favor, preencha o formulário abaixo com
-            seus detalhes e mensagem, e eu entrarei em contato o mais rápido
-            possível.
+          Se você tem alguma dúvida, sugestão ou gostaria de discutir uma oportunidade de colaboração, por favor, preencha o formulário abaixo. Estou sempre à procura de novos desafios e projetos interessantes. Vamos conversar!
           </p>
           <p className="required-fields">
             Todos os campos marcados com (*) são obrigatórios.

@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
+
 const GlobalStyle = createGlobalStyle`
   :root {
     --primary-color: #fff;
@@ -17,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background-image: url('src/assets/Background.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--text-color);
   }
 
@@ -25,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
   text-decoration: none;
   transition: 0.4s;
   }
-  
+
   body ul {
   list-style: none;
   }

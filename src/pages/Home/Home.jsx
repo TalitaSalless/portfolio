@@ -1,7 +1,7 @@
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 import "./HomeStyle.css";
-import Foto from "../../assets/Foto.png";
+import Foto from "../../assets/Me.png";
 
 export function Home() {
   return (

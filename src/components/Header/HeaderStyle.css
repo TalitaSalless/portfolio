@@ -1,15 +1,15 @@
 .header {
   display: flex;
   justify-content: space-between;
-  max-width: 1170px;
-  padding: 1.5rem 0;
-  margin: 0 auto;
+  padding: 1rem 0;
+  margin: 0 5rem;
+  
 }
 
 .header-brand {
-  margin-left: 1.1rem;
+  margin-left: 1rem;
   color: #777;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .header-navbar ul {
@@ -26,7 +26,7 @@
   font-size: 0.8rem;
 
   &:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
     color: #20c997;
   }
 }

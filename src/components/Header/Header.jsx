@@ -5,7 +5,7 @@ export function Header() {
   return (
     <header className="header">
       {/* <Link to="/" className="header-brand">
-        Ts
+        TALITA
       </Link> */}
 
       {/* Navegação */}

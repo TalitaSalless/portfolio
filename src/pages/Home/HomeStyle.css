@@ -48,7 +48,7 @@
   height: 300px;
   border-radius: 50%;
   /* box-shadow: 5px 5px 16px 0px #fdc435; */
-  transition: transform 0.3s ease;
+  transition: transform 1s ease;
 }
 .profile-section img:hover {
   transform: scale(1.1);
@@ -86,7 +86,7 @@
 }
 
 .icon-container i {
-  transition: 1s;
+  transition: transform 1s ease;
 
   &:hover {
     transform: scale(1.2);
@@ -107,6 +107,7 @@
   a {
     i {
       font-size: 1.5rem;
+      transition: transform 1s ease;
 
       &:hover {
         transform: scale(1.2);

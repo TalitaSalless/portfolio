@@ -50,7 +50,12 @@ export function Contato() {
     <>
       <Header />
       <Container>
+        <video autoPlay loop muted style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: -1 }}>
+          <source src="/src/assets/video-fundo.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo.
+        </video>
         <Card>
+
           <CardContent>
             <Title>Entre em Contato</Title>
             <p>
@@ -91,7 +96,7 @@ export function Contato() {
               </InputWrapper>
 
               <InputWrapper>
-              
+
                 <Textarea
                   placeholder="Mensagem*"
                   rows="5"
@@ -117,102 +122,102 @@ export function Contato() {
 
 
 
-  // export function Contato() {
-  //   const [nome, setNome] = useState("");
-  //   const [email, setEmail] = useState("");
-  //   const [telefone, setTelefone] = useState("");
-  //   const [mensagem, setMensagem] = useState("");
-  //   const [erros, setErros] = useState({});
+// export function Contato() {
+//   const [nome, setNome] = useState("");
+//   const [email, setEmail] = useState("");
+//   const [telefone, setTelefone] = useState("");
+//   const [mensagem, setMensagem] = useState("");
+//   const [erros, setErros] = useState({});
 
-  //   useEffect(() => {
-  //     const campos = document.querySelectorAll(".campoDoFormulario");
-  //     const botaoEnviar = document.querySelector("#btnEnviar");
+//   useEffect(() => {
+//     const campos = document.querySelectorAll(".campoDoFormulario");
+//     const botaoEnviar = document.querySelector("#btnEnviar");
 
-  //     const validarCampos = () => {
-  //       let novosErros = {};
-  //       campos.forEach((input) => {
-  //         if (input.value.trim() === "") {
-  //           novosErros[input.name] = "O campo não foi preenchido";
-  //         } else {
-  //           novosErros[input.name] = "";
-  //         }
-  //       });
-  //       setErros(novosErros);
-  //     };
+//     const validarCampos = () => {
+//       let novosErros = {};
+//       campos.forEach((input) => {
+//         if (input.value.trim() === "") {
+//           novosErros[input.name] = "O campo não foi preenchido";
+//         } else {
+//           novosErros[input.name] = "";
+//         }
+//       });
+//       setErros(novosErros);
+//     };
 
-  //     botaoEnviar.addEventListener("click", (event) => {
-  //       event.preventDefault();
-  //       validarCampos();
-  //     });
+//     botaoEnviar.addEventListener("click", (event) => {
+//       event.preventDefault();
+//       validarCampos();
+//     });
 
-  //     return () => {
-  //       botaoEnviar.removeEventListener("click", () => {});
-  //     };
-  //   }, []); // executar apenas uma vez ao montar o componente
+//     return () => {
+//       botaoEnviar.removeEventListener("click", () => {});
+//     };
+//   }, []); // executar apenas uma vez ao montar o componente
 
-  //   return (
-  //     <>
-  //       <Header />
-  //       <div className="container-formulario">
-  //         <div className="texto">
-  //           <h2 className="section-title">Entre em Contato</h2>
-  //           <p className="section-description">
-  //           Se você tem alguma dúvida, sugestão ou gostaria de discutir uma oportunidade de colaboração, por favor, preencha o formulário abaixo. Estou sempre à procura de novos desafios e projetos interessantes. Vamos conversar!
-  //           </p>
-  //           <p className="required-fields">
-  //             Todos os campos marcados com (*) são obrigatórios.
-  //           </p>
-  //         </div>
-  //         <div className="formulario">
-  //           <form>
-  //             <input
-  //               className="campoDoFormulario"
-  //               type="text"
-  //               placeholder="Nome completo*"
-  //               name="nome"
-  //               value={nome}
-  //               onChange={(e) => setNome(e.target.value)}
-  //             />
-  //             <span className="mensagem-erro">{erros.nome}</span>
+//   return (
+//     <>
+//       <Header />
+//       <div className="container-formulario">
+//         <div className="texto">
+//           <h2 className="section-title">Entre em Contato</h2>
+//           <p className="section-description">
+//           Se você tem alguma dúvida, sugestão ou gostaria de discutir uma oportunidade de colaboração, por favor, preencha o formulário abaixo. Estou sempre à procura de novos desafios e projetos interessantes. Vamos conversar!
+//           </p>
+//           <p className="required-fields">
+//             Todos os campos marcados com (*) são obrigatórios.
+//           </p>
+//         </div>
+//         <div className="formulario">
+//           <form>
+//             <input
+//               className="campoDoFormulario"
+//               type="text"
+//               placeholder="Nome completo*"
+//               name="nome"
+//               value={nome}
+//               onChange={(e) => setNome(e.target.value)}
+//             />
+//             <span className="mensagem-erro">{erros.nome}</span>
 
-  //             <input
-  //               className="campoDoFormulario"
-  //               type="email"
-  //               placeholder="Email*"
-  //               name="email"
-  //               value={email}
-  //               onChange={(e) => setEmail(e.target.value)}
-  //             />
-  //             <span className="mensagem-erro">{erros.email}</span>
+//             <input
+//               className="campoDoFormulario"
+//               type="email"
+//               placeholder="Email*"
+//               name="email"
+//               value={email}
+//               onChange={(e) => setEmail(e.target.value)}
+//             />
+//             <span className="mensagem-erro">{erros.email}</span>
 
-  //             <input
-  //               className="campoDoFormulario"
-  //               type="tel"
-  //               placeholder="Telefone"
-  //               name="telefone"
-  //               value={telefone}
-  //               onChange={(e) => setTelefone(e.target.value)}
-  //             />
-  //             <span className="mensagem-erro">{erros.telefone}</span>
+//             <input
+//               className="campoDoFormulario"
+//               type="tel"
+//               placeholder="Telefone"
+//               name="telefone"
+//               value={telefone}
+//               onChange={(e) => setTelefone(e.target.value)}
+//             />
+//             <span className="mensagem-erro">{erros.telefone}</span>
 
-  //             <textarea
-  //               className="campoDoFormulario"
-  //               placeholder="Mensagem*"
-  //               cols="30"
-  //               rows="10"
-  //               name="mensagem"
-  //               value={mensagem}
-  //               onChange={(e) => setMensagem(e.target.value)}
-  //             ></textarea>
-  //             <span className="mensagem-erro">{erros.mensagem}</span>
+//             <textarea
+//               className="campoDoFormulario"
+//               placeholder="Mensagem*"
+//               cols="30"
+//               rows="10"
+//               name="mensagem"
+//               value={mensagem}
+//               onChange={(e) => setMensagem(e.target.value)}
+//             ></textarea>
+//             <span className="mensagem-erro">{erros.mensagem}</span>
 
-  //             <button type="submit" id="btnEnviar">
-  //               Enviar
-  //             </button>
-  //           </form>
-  //         </div>
-  //       </div>
-  //       <Footer />
-  //     </>
-  //   );
-  // }
+//             <button type="submit" id="btnEnviar">
+//               Enviar
+//             </button>
+//           </form>
+//         </div>
+//       </div>
+//       <Footer />
+//     </>
+//   );
+// }

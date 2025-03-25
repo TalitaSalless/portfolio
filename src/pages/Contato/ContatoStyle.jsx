@@ -8,6 +8,7 @@ export const Container = styled.div`
   width: 100%;
   min-height: 90vh;
   padding: 40px;
+  position: relative;
 `;
 
 export const Card = styled.div`
@@ -18,13 +19,23 @@ export const Card = styled.div`
   justify-content: center;
   flex-direction: column;
   border-radius: 8px;
-  background-image: url("/src/assets/Gradient.svg");
-  background-size: 20rem;
-  background-position: center;
-  background-repeat: no-repeat;
+
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  
+
+  // Vídeo de fundo
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/src/assets/video-fundo.mp4') no-repeat center center;
+    background-size: cover;
+    opacity: 0.1;  // Ajuste a opacidade para não interferir no conteúdo
+    z-index: -1;  // Coloca o vídeo atrás do conteúdo
+  }
 `;
 
 export const CardContent = styled.div`
@@ -55,7 +66,7 @@ export const InputWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 12px;
@@ -108,7 +119,7 @@ export const Button = styled.button`
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   background-color: #1f1b1bf7;
   display: flex;
   align-items: center;

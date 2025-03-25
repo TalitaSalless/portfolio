@@ -30,7 +30,6 @@
   justify-content: center;
   flex-direction: column;
   padding: 0 1.4rem;
-
 }
 .profile-section {
   display: flex;
@@ -73,7 +72,6 @@
   font-family: "Nunito", sans-serif;
   text-align: justify;
   font-size: 1.3rem;
-
   margin-bottom: 3rem;
   line-height: 2rem;
   padding: 0 1.4rem;
@@ -93,7 +91,6 @@
   &:hover {
     transform: scale(1.2);
     color: var(--secondary-color);
-
   }
 }
 
@@ -114,10 +111,15 @@
       &:hover {
         transform: scale(1.2);
         color: var(--secondary-color);
-
       }
     }
   }
 }
 
+/* .scale-up-hor-left {
+  -webkit-animation: scale-up-hor-left 2s cubic-bezier(0.39, 0.575, 0.565, 1)
+    NaNs both;
+  animation: scale-up-hor-left 2s cubic-bezier(0.39, 0.575, 0.565, 1) NaNs both;
+}
 
+@-webkit-keyframes scale-up-hor-left{0%{-webkit-transform:scaleX(.4);transform:scaleX(.4);-webkit-transform-origin:0 0;transform-origin:0 0}100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:0 0;transform-origin:0 0}}@keyframes scale-up-hor-left{0%{-webkit-transform:scaleX(.4);transform:scaleX(.4);-webkit-transform-origin:0 0;transform-origin:0 0}100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:0 0;transform-origin:0 0}} */

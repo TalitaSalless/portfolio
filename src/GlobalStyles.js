@@ -34,8 +34,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     footer {
+        background-image: url("./src/assets/Background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         text-align: center;
-        padding-bottom: 2rem;
         span {
             font-weight: bold;
             color: var(--secondary-color);

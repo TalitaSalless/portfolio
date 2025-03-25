@@ -3,6 +3,7 @@ import { Footer } from "../../components/Footer/Footer";
 import "./HomeStyle.css";
 import Foto from "../../assets/Me.jpg";
 
+
 // Constantes para os URLs das redes sociais e classes de ícones
 const GITHUB_URL = "https://github.com/TalitaSalless";
 const EMAIL_URL = "mailto:talitasalles93@gmail.com";

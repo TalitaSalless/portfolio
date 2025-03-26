@@ -4,11 +4,6 @@ import "./HomeStyle.css";
 import Foto from "../../assets/Me.jpg";
 
 
-// Constantes para os URLs das redes sociais e classes de ícones
-const GITHUB_URL = "https://github.com/TalitaSalless";
-const EMAIL_URL = "mailto:talitasalles93@gmail.com";
-const LINKEDIN_URL = "https://www.linkedin.com/in/talita-salles/";
-
 export function Home() {
     return (
         <>
@@ -18,34 +13,17 @@ export function Home() {
                     <div className="profile-section">
                         <img src={Foto} />
                         <h1>Desenvolvedora front-end</h1>
-                        <div className="header-social-media">
-                            <ul>
-                                <li>
-                                    <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
-                                        <i className="fab fa-github"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href={EMAIL_URL} target="_blank" rel="noopener noreferrer">
-                                        <i className="fa-regular fa-envelope"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
-                                        <i className="fab fa-linkedin"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+
                     </div>
 
                     <div className="about-section">
                         <div className="about-text">
-                            <h1>Talita Salles</h1>
+                            <h1>Sobre mim</h1>
                             <p>
                                 Desenvolvedora Front-end em formação, com foco em JavaScript e React. Possuo conhecimento em desenvolvimento de interfaces modernas, responsivas e acessíveis, utilizando boas práticas.
                                 Atualmente, curso Gestão da Tecnologia da Informação, o que amplia minha visão estratégica sobre tecnologia e negócios. Busco constantemente aprimorar minhas habilidades por meio de projetos práticos e aprofundamento em padrões de desenvolvimento.
                             </p>
+                            <p>Habilidades</p>
                             <div className="icon-container">
                                 <i className="fab fa-html5"></i>
                                 <i className="fab fa-css3-alt"></i>

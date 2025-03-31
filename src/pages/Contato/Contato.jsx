@@ -14,7 +14,7 @@ import {
   ErrorMessage,
   Title,
   Icon,
-} from "./ContatoStyle";
+} from "./ContatoStyles";
 
 export function Contato() {
   const [nome, setNome] = useState("");

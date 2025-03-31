@@ -1,9 +1,11 @@
-import "./FooterStyle.css";
+import { FooterContainer, FooterText, FooterSpan } from "./FooterStyles";
 
 export function Footer() {
   return (
-    <footer className="footer">
-      <p>Desenvolvido por <span>Talita Salles</span> Copyright© 2024</p>
-    </footer>
-  )
+    <FooterContainer>
+      <FooterText>
+        Desenvolvido por <FooterSpan>Talita Salles</FooterSpan> Copyright© 2024
+      </FooterText>
+    </FooterContainer>
+  );
 }

@@ -19,11 +19,10 @@ export const Card = styled.div`
   justify-content: center;
   flex-direction: column;
   border-radius: 8px;
-
   padding: 2rem;
+  position: relative;
 
-
-  // Vídeo de fundo
+  /* // Vídeo de fundo
   &::before {
     content: '';
     position: absolute;
@@ -31,22 +30,23 @@ export const Card = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/assets/video-fundo.mp4') no-repeat center center;
+    background: url('/assets/Background.png') no-repeat center center;
     background-size: cover;
     opacity: 0.1;  // Ajuste a opacidade para não interferir no conteúdo
     z-index: -1;  // Coloca o vídeo atrás do conteúdo
-  }
+  } */
 `;
 
 export const CardContent = styled.div`
   text-align: center;
   width: 100%;
-
-  p {
-    font-size: 1rem;
-    color: #ddd;
-    margin-bottom: 1.5rem;
-  }
+  position: relative;  // Garanta que o conteúdo tenha a camada superior
+  z-index: 1; // Coloca o conteúdo na camada acima do vídeo
+    p {
+      font-size: 1rem;
+      color: #ddd;
+      margin-bottom: 1.5rem;
+    }
 `;
 
 export const Title = styled.h3`
@@ -73,13 +73,10 @@ export const InputWrapper = styled.div`
   margin-bottom: 10px;
 `;
 
-
-
 export const Icon = styled.div`
   color: #ffffff;
   margin-right: 10px;
   font-size: 1.2rem;
-
 `;
 
 export const Input = styled.input`
@@ -96,7 +93,6 @@ export const Input = styled.input`
 `;
 
 export const Textarea = styled.textarea`
-
   width: 100%;
   border: none;
   background: transparent;

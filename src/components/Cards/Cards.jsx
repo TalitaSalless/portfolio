@@ -1,9 +1,9 @@
 import { Card } from "../Card/Card";
-import "./CardsStyle.css";
+import { CardsContainer } from "./CardsStyles";
 
 export function Cards() {
   return (
-    <div className="cards">
+    <CardsContainer>
       <Card
         projectName="Projeto Marvel"
         projectImage="https://github.com/TalitaSalless/Projeto-Marvel-DevWeek/raw/main/fullpage-projeto.png"
@@ -21,19 +21,17 @@ export function Cards() {
       <Card
         projectName="UI - Twitter"
         projectImage="https://github.com/TalitaSalless/ui-twitter/blob/main/screencapture0.png?raw=true"
-        // projectLink="https://github.com/TalitaSalless/ui-twitter"
         githubLink="https://github.com/TalitaSalless/ui-twitter"
         projectDescription="Interface recriada do Twitter utilizando HTML, CSS e JavaScript. Focado na construção de um layout responsivo e estilizado, sem funcionalidades backend, apenas a parte visual da rede social."
       />
       <Card
         projectName="Projeto SASS"
         projectImage="https://github.com/TalitaSalless/Projeto-SASS/blob/main/screen1.png?raw=true"
-        // projectLink=""
         githubLink="https://github.com/TalitaSalless/Projeto-SASS"
         projectDescription="Aplicação que utiliza SASS para estilização, focando em técnicas de organização e reutilização de código CSS. A aplicação é responsiva e demonstra o poder do SASS em projetos de maior escala."
       />
       <Card
-        projectName="Landing Page Agência "
+        projectName="Landing Page Agência"
         projectImage="https://github.com/TalitaSalless/landing-page-agencia/raw/main/images/talitasalless.github.io_landing-page-agencia_.png"
         projectLink="https://talitasalless.github.io/landing-page-agencia/"
         githubLink="https://github.com/TalitaSalless/landing-page-agencia"
@@ -46,7 +44,6 @@ export function Cards() {
         githubLink="https://github.com/TalitaSalless/buscador-de-usuarios-github"
         projectDescription="Aplicação desenvolvida em JavaScript que consome a GitHub API para buscar e exibir informações detalhadas sobre usuários. Utiliza Axios para requisições, tem uma interface interativa e dinâmica, permitindo uma busca rápida por perfis e projetos. Ideal para quem deseja explorar dados do GitHub de forma prática e visual."
       />
-
-    </div>
+    </CardsContainer>
   );
 }

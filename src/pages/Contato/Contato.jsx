@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header/Header";
-import { FaUser, FaEnvelope, FaPhone, FaCommentDots } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaPhone, } from "react-icons/fa";
 import {
   Container,
   Card,
@@ -51,7 +51,7 @@ export function Contato() {
       <Header />
       <Container>
         <video autoPlay loop muted style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: -1 }}>
-          <source src="/src/assets/video-fundo.mp4" type="video/mp4" />
+          <source src="/assets/video-fundo.mp4" type="video/mp4" />
           Seu navegador não suporta vídeo.
         </video>
         <Card>

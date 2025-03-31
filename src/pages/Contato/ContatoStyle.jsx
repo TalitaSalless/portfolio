@@ -21,7 +21,7 @@ export const Card = styled.div`
   border-radius: 8px;
 
   padding: 2rem;
-  
+
 
   // Vídeo de fundo
   &::before {
@@ -31,7 +31,7 @@ export const Card = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/src/assets/video-fundo.mp4') no-repeat center center;
+    background: url('/assets/video-fundo.mp4') no-repeat center center;
     background-size: cover;
     opacity: 0.1;  // Ajuste a opacidade para não interferir no conteúdo
     z-index: -1;  // Coloca o vídeo atrás do conteúdo

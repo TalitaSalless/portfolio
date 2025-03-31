@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         height: 100vh;
         color: var(--primary-color);
-        background-image: url("./src/assets/Background.png");
+        background-image: url("/public/assets/Background.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

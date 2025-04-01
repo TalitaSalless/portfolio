@@ -19,16 +19,14 @@ export function Home() {
                 <ContainerInfos>
                     <ProfileSection>
                         <ProfileImage src="/assets/Me.jpg" />
-                        <h1>Desenvolvedora front-end</h1>
                     </ProfileSection>
 
                     <AboutSection>
                         <AboutText>
-                            <h1>Sobre mim</h1>
+                            <h1>Desenvolvedora front-end</h1>
                             <p>
-                                Sou desenvolvedora front-end em formação, com forte interesse em JavaScript e React.js. Tenho experiência prática em HTML, CSS, e JavaScript, além de consumo de APIs REST e controle de versões com Git/GitHub. Busco sempre aprimorar minhas habilidades, especialmente em React, trabalhando com Hooks, Context API e React Router, e explorando novas tecnologias como TypeScript e Next.js. Com foco em criar interfaces modernas, responsivas e acessíveis, meu objetivo é desenvolver soluções eficientes que ofereçam uma experiência de usuário excepcional.
+                            Com sólida experiência em JavaScript, React.js, HTML, CSS e APIs REST, sou apaixonada por criar interfaces modernas, responsivas e acessíveis, sempre focando em proporcionar uma excelente experiência para o usuário. Trabalho com as melhores práticas de desenvolvimento e estou comprometida em entregar soluções eficientes e de alta qualidade.
                             </p>
-                            <p>Habilidades</p>
                             <IconContainer>
                                 <i className="fab fa-html5"></i>
                                 <i className="fab fa-css3-alt"></i>

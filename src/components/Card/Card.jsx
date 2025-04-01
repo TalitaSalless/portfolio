@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { CardContainer, CardContent, CardText, CardImage, CardLinks, ProjectDescription } from "./CardStyles";
 import { ButtonComponent } from "../Button/Button";
 
@@ -22,7 +23,7 @@ export function Card({ projectName, projectImage, projectLink, githubLink, proje
                     <CardLinks>
                         {projectLink && (
                             <a href={projectLink} target="_blank" rel="noopener noreferrer">
-                                <ButtonComponent icon={faGithubAlt}>Link do projeto</ButtonComponent>
+                                <ButtonComponent icon={faGlobe}>Link do projeto</ButtonComponent>
                             </a>
                         )}
                         <a href={githubLink} target="_blank" rel="noopener noreferrer">

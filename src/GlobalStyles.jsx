@@ -19,10 +19,14 @@ export const GlobalStyles = createGlobalStyle`
     body {
         height: 100vh;
         color: var(--primary-color);
-        background-image: url("/assets/Background.png");
+        background-image: url("/assets/back-new.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        ${'' /* background-image: url("/assets/Background.png");
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */}
     }
 
     body a {

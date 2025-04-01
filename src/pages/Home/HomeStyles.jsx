@@ -4,6 +4,10 @@ export const ContainerHome = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  /* background-image: url("/assets/back-new.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
 `;
 
 export const ContainerInfos = styled.div`
@@ -14,7 +18,6 @@ export const ContainerInfos = styled.div`
   text-align: center;
   border-radius: 2rem;
   gap: 8rem;
-
 `;
 
 export const ProfileSection = styled.div`

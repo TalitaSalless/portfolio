@@ -1,6 +1,6 @@
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
-// import { TypedName } from "../../components/TypedName/TypedName";
+
 import {
     ContainerHome,
     ContainerInfos,
@@ -19,15 +19,14 @@ export function Home() {
                 <ContainerInfos>
                     <ProfileSection>
                         <ProfileImage src="/assets/Me.jpg" />
-                        {/* <h1> Olá, eu sou <TypedName /></h1> */}
-                        <h1>Desenvolvedora Front-end</h1>
+                        <h1>Desenvolvedora front-end</h1>
                     </ProfileSection>
 
                     <AboutSection>
                         <AboutText>
                             <h1>Sobre mim</h1>
                             <p>
-                            Sou desenvolvedora front-end em formação, com forte interesse em JavaScript e React.js. Tenho experiência prática em HTML, CSS, e JavaScript, além de consumo de APIs REST e controle de versões com Git/GitHub. Busco sempre aprimorar minhas habilidades, especialmente em React, trabalhando com Hooks, Context API e React Router, e explorando novas tecnologias como TypeScript e Next.js. Com foco em criar interfaces modernas, responsivas e acessíveis, meu objetivo é desenvolver soluções eficientes que ofereçam uma experiência de usuário excepcional.
+                                Sou desenvolvedora front-end em formação, com forte interesse em JavaScript e React.js. Tenho experiência prática em HTML, CSS, e JavaScript, além de consumo de APIs REST e controle de versões com Git/GitHub. Busco sempre aprimorar minhas habilidades, especialmente em React, trabalhando com Hooks, Context API e React Router, e explorando novas tecnologias como TypeScript e Next.js. Com foco em criar interfaces modernas, responsivas e acessíveis, meu objetivo é desenvolver soluções eficientes que ofereçam uma experiência de usuário excepcional.
                             </p>
                             <p>Habilidades</p>
                             <IconContainer>

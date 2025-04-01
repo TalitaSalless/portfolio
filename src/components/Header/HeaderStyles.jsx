@@ -7,7 +7,6 @@ export const HeaderContainer = styled.header`
     align-items: center;
     padding: 1rem 2rem;
     background-color: transparent;
-    color: white;
 
     @media (max-width: 768px) {
     flex-direction: column;
@@ -21,17 +20,17 @@ export const HeaderName = styled.div`
 `;
 
 export const HeaderBrand = styled(Link)`
-    color: white;
+    color: var(--primary-color);
     text-decoration: none;
 
     &:hover {
-        color: #a3e4d7;
+        color: var(--secondary-purple);
     }
 `;
 
 export const HeaderNavbar = styled.nav`
     .active {
-        color: #a3e4d7;
+        color: var(--secondary-color:);
     }
 `;
 
@@ -51,7 +50,16 @@ export const NavbarList = styled.ul`
 export const NavbarItem = styled.li`
     margin: 0 1rem;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
+
+    a {
+        color: var(--primary-color);
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: var(--secondary-purple);
+        }
+    }
 `;
 
 export const SocialMediaContainer = styled.div`
@@ -75,12 +83,11 @@ export const SocialMediaItem = styled.li`
     font-size: 1.5rem;
 
     a {
-        color: white;
+        color: var(--primary-color);
         transition: color 0.3s ease;
-        font-size: inherit;
 
         &:hover {
-        color: #a3e4d7;
+            color: var(--secondary-purple);
         }
     }
 `;

@@ -28,7 +28,7 @@ export function Header() {
       <HeaderNavbar>
         <NavbarList>
           <NavbarItem>
-            <Link to="/" className="active">
+            <Link to="/">
               Home
             </Link>
           </NavbarItem>

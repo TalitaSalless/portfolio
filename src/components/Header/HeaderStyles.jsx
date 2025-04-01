@@ -80,14 +80,31 @@ export const SocialMediaList = styled.ul`
 
 export const SocialMediaItem = styled.li`
     margin: 0 0.8rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem; /* Tamanho um pouco maior para destaque */
+    padding: 0.4rem;
+    border-radius: 50%;
+    border: 2px solid transparent; /* Evita contraste excessivo */
+    background: rgba(255, 255, 255, 0.1); /* Fundo sutil */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
 
     a {
         color: var(--primary-color);
-        transition: color 0.3s ease;
+        transition: color 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        &:hover {
-            color: var(--secondary-purple);
+    &:hover {
+        background: var(--secondary-purple); /* Destaque ao passar o mouse */
+        transform: scale(1.1); /* Efeito de leve crescimento */
+        box-shadow: 0 0 12px rgba(95, 55, 213, 0.6); /* Brilho ao redor */
+
+        a {
+            color: var(--primary-color) /* Ícone fica branco no hover */
         }
     }
 `;

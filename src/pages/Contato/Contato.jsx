@@ -53,7 +53,7 @@ export function Contato() {
     <>
       <Header />
       <Container>
-        <video
+        {/* <video
           autoPlay
           loop
           muted
@@ -69,7 +69,7 @@ export function Contato() {
           >
           <source src="/assets/video-fundo.mp4" type="video/mp4" />
           Seu navegador não suporta vídeo.
-        </video>
+        </video> */}
 
         <Card>
           <CardContent>

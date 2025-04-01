@@ -6,12 +6,13 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  /* max-height: 80vh; */
   /* min-height: 90vh; */
   /* padding: 40px; */
   /* position: relative; */
 
   position: relative;
-  min-height: 100vh; /* Garantir que o conteúdo ocupe toda a altura da tela */
+  /* min-height: 100vh; Garantir que o conteúdo ocupe toda a altura da tela */
   padding-bottom: 60px; /* Ajuste conforme a altura do seu Footer */
 `;
 
@@ -37,8 +38,8 @@ export const Card = styled.div`
     background: url('/assets/Background.png') no-repeat center center;
     background-size: cover;
     opacity: 0.1;  // Ajuste a opacidade para não interferir no conteúdo
-    z-index: -1;  // Coloca o vídeo atrás do conteúdo
-  } */
+    z-index: -1;  // Coloca o vídeo atrás do conteúdo */
+  }
 `;
 
 export const CardContent = styled.div`

@@ -1,6 +1,6 @@
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
-
+// import { TypedName } from "../../components/TypedName/TypedName";
 import {
     ContainerHome,
     ContainerInfos,
@@ -19,7 +19,8 @@ export function Home() {
                 <ContainerInfos>
                     <ProfileSection>
                         <ProfileImage src="/assets/Me.jpg" />
-                        <h1>Desenvolvedora front-end</h1>
+                        {/* <h1> Olá, eu sou <TypedName /></h1> */}
+                        <h1>Desenvolvedora Front-end</h1>
                     </ProfileSection>
 
                     <AboutSection>

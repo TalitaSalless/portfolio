@@ -26,8 +26,7 @@ export function Home() {
                         <AboutText>
                             <h1>Sobre mim</h1>
                             <p>
-                                Desenvolvedora Front-end em formação, com foco em JavaScript e React. Possuo conhecimento em desenvolvimento de interfaces modernas, responsivas e acessíveis, utilizando boas práticas.
-                                Atualmente, curso Gestão da Tecnologia da Informação, o que amplia minha visão estratégica sobre tecnologia e negócios. Busco constantemente aprimorar minhas habilidades por meio de projetos práticos e aprofundamento em padrões de desenvolvimento.
+                            Sou desenvolvedora front-end em formação, com forte interesse em JavaScript e React.js. Tenho experiência prática em HTML, CSS, e JavaScript, além de consumo de APIs REST e controle de versões com Git/GitHub. Busco sempre aprimorar minhas habilidades, especialmente em React, trabalhando com Hooks, Context API e React Router, e explorando novas tecnologias como TypeScript e Next.js. Com foco em criar interfaces modernas, responsivas e acessíveis, meu objetivo é desenvolver soluções eficientes que ofereçam uma experiência de usuário excepcional.
                             </p>
                             <p>Habilidades</p>
                             <IconContainer>

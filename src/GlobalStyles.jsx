@@ -1,10 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
     :root {
-        --primary-color: #FFFFFF;
+        --primary-color: #e8e8e8;        ;
         --secondary-color: #FDC435;
+        --background-button:#1f1b1bf7;
         --text-color: #828282;
+        --alert-color:#ff4d4d;
     }
 
     * {
@@ -32,18 +34,6 @@ const GlobalStyle = createGlobalStyle`
     body ul {
         list-style: none;
     }
-
-    footer {
-        background-image: url("/assets/Background.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        text-align: center;
-        span {
-            font-weight: bold;
-            color: var(--secondary-color);
-        }
-    }
 `;
 
-export default GlobalStyle;
+

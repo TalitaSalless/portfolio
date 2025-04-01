@@ -6,9 +6,13 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  min-height: 90vh;
-  padding: 40px;
+  /* min-height: 90vh; */
+  /* padding: 40px; */
+  /* position: relative; */
+
   position: relative;
+  min-height: 100vh; /* Garantir que o conteúdo ocupe toda a altura da tela */
+  padding-bottom: 60px; /* Ajuste conforme a altura do seu Footer */
 `;
 
 export const Card = styled.div`
@@ -106,29 +110,8 @@ export const Textarea = styled.textarea`
   }
 `;
 
-export const Button = styled.button`
-  width: 100%;
-  padding: 12px;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  color: var(--primary-color);
-  background-color: #1f1b1bf7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-
-  &:hover {
-    background-color: #292626;
-  }
-`;
-
 export const ErrorMessage = styled.span`
-  color: #ff4d4d;
+  color: var(--alert-color);
   font-size: 0.9rem;
   margin-bottom: 10px;
   display: block;

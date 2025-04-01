@@ -1,4 +1,4 @@
-import GlobalStyles from "./GlobalStyles";
+import { GlobalStyles } from "./GlobalStyles";
 import { AppRoutes } from "./Routes";
 
 export function App() {

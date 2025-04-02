@@ -20,6 +20,7 @@ export const ContainerInfos = styled.div`
   gap: 8rem;
 `;
 
+
 export const ProfileSection = styled.div`
   display: flex;
   flex-direction: column;
@@ -85,7 +86,6 @@ export const AboutText = styled.div`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1s ease forwards;
@@ -105,9 +105,9 @@ export const AboutText = styled.div`
   p {
     font-family: "Nunito", sans-serif;
     text-align: justify;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 2rem;
-    color: var(--text-color);
+    color: var(--primary-color);
     margin-bottom: 2rem;
     max-width: 58rem;
     margin-left: auto;

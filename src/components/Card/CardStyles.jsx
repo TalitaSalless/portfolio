@@ -35,10 +35,11 @@ export const CardText = styled.div`
 `;
 
 export const ProjectDescription = styled.p`
+    width: 100%;
     line-height: 1.6rem;
     font-size: 0.9rem;
     margin: 1rem 1rem;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
     border-radius: 1rem;
     text-align: justify;
 `;
@@ -65,17 +66,12 @@ export const CardImage = styled.div`
 `;
 
 export const CardLinks = styled.div`
-    display: flex;
-    align-items: center;
     margin: 1rem 1rem;
     padding: 1rem 1rem;
-
-    a {
-        text-decoration: none;
-        position: relative;
-        margin-right: 10px;
-        color: var(--primary-color);
-        background-color: var(--primary-purple);
-    }
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 `;
 

@@ -5,9 +5,14 @@ export const FooterContainer = styled.footer`
   align-items: center;
   justify-content: center;
   /* padding: 2rem; */
-  padding: 1rem 2rem;  // Ajuste o padding conforme necessário
+  padding: 1rem 2rem;
   color: white;
   font-size: 0.8rem;
+
+  @media (max-width: 1023px) {
+    padding: 1rem 1rem;
+    font-size: 0.7rem;
+  }
 `;
 
 export const FooterText = styled.p`

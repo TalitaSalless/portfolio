@@ -8,15 +8,18 @@ export const HeaderContainer = styled.header`
     padding: 1rem 2rem;
     background-color: transparent;
 
-    @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
+    @media (max-width: 1023px) {
+        padding: 1rem 1rem;
     }
 `;
 
 export const HeaderName = styled.div`
     font-size: 1.8rem;
     font-weight: bold;
+
+    @media (max-width: 1023px) {
+        font-size: 1.6rem;
+    }
 `;
 
 export const HeaderBrand = styled(Link)`
@@ -30,7 +33,7 @@ export const HeaderBrand = styled(Link)`
 
 export const HeaderNavbar = styled.nav`
     .active {
-        color: var(--secondary-color:);
+        color: var(--secondary-color);
     }
 `;
 
@@ -39,12 +42,6 @@ export const NavbarList = styled.ul`
     list-style: none;
     padding: 0;
     margin: 0;
-
-    @media (max-width: 768px) {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 1rem;
-    }
 `;
 
 export const NavbarItem = styled.li`
@@ -60,6 +57,9 @@ export const NavbarItem = styled.li`
             color: var(--secondary-purple);
         }
     }
+    @media (max-width: 1023px) {
+        font-size: 1.1rem;
+    }
 `;
 
 export const SocialMediaContainer = styled.div`
@@ -72,10 +72,6 @@ export const SocialMediaList = styled.ul`
     list-style: none;
     padding: 0;
     margin: 0;
-
-    @media (max-width: 768px) {
-        margin-top: 1rem;
-    }
 `;
 
 export const SocialMediaItem = styled.li`
@@ -105,6 +101,14 @@ export const SocialMediaItem = styled.li`
 
         a {
             color: var(--primary-color) /* Ícone fica branco no hover */
+        }
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 1.1rem;
+
+        a {
+            font-size: 1rem;
         }
     }
 `;

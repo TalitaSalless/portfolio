@@ -18,6 +18,11 @@ export const ContainerInfos = styled.div`
   text-align: center;
   border-radius: 2rem;
   gap: 8rem;
+
+  @media (max-width: 1024px) {
+    gap: 5rem;
+    height: 100%;
+  }
 `;
 
 
@@ -45,13 +50,15 @@ export const ProfileImage = styled.img`
     box-shadow: 0 0 20px rgba(95, 55, 213, 0.8);
     border: 4px solid var(--secondary-purple);
   }
-`;
 
-export const JobTitle = styled.h2`
-  font-size: 1.8rem;
-  font-family: "Nunito", sans-serif;
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
+  @media (max-width: 1023px) {
+    width: 15rem;
+    height: 15rem;
+    &:active, &:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(95, 55, 213, 0.6);
+    }
+  }
 `;
 
 export const AboutSection = styled.div`
@@ -71,6 +78,10 @@ export const AboutSection = styled.div`
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  @media (max-width: 1023px) {
+    padding: 0;
   }
 `;
 
@@ -127,6 +138,17 @@ export const AboutText = styled.div`
       transform: translateY(0);
     }
   }
+
+  @media (max-width: 1023px) {
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -142,7 +164,7 @@ export const IconContainer = styled.div`
     transition: transform 0.3s ease-in-out, color 0.3s ease, filter 0.3s ease;
     animation: pulse 2s infinite;
     color: var(--primary-purple);
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)); /* Efeito de sombra sutil */
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
 
     &:hover {
       transform: scale(1.2);
@@ -171,104 +193,19 @@ export const IconContainer = styled.div`
       transform: scale(1);
     }
   }
+
+  @media (max-width: 1023px) {
+    i {
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    &:active, &:focus {
+      transform: scale(1);
+      color: var(--secondary-purple);
+      filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.3));
+    }
+  }
 `;
-
-
-
-
-
-
-
-// import styled from 'styled-components';
-
-// export const ContainerHome = styled.div`
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-// `;
-
-// export const ContainerInfos = styled.div`
-//   height: 53rem; /* 848px */
-//   width: 90%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border-radius: 2rem;
-// `;
-
-// export const AboutSection = styled.div`
-//   width: 50%;
-//   height: 80%;
-//   margin: 1rem;
-//   padding: 2rem;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// `;
-
-// export const ProfileSection = styled.div`
-//   width: 50%;
-//   height: 80%;
-//   margin: 1rem;
-//   padding: 2rem;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-direction: column;
-//   background-image: url("/assets/Gradient.svg");
-//   background-size: 625px 700px;
-//   background-position: center;
-//   background-repeat: no-repeat;
-// `;
-
-// export const ProfileImage = styled.img`
-//   margin-top: 3rem;
-//   width: 300px;
-//   height: 300px;
-//   border-radius: 50%;
-//   transition: transform 1s ease;
-
-//   &:hover {
-//     transform: scale(1.1);
-//   }
-// `;
-
-// export const AboutText = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   padding: 0 1.4rem;
-
-//   h1 {
-//     font-size: 2.5rem;
-//     font-family: "Nunito", sans-serif;
-//     color: var(--secondary-color);
-//     margin-bottom: 1rem;
-//   }
-
-//   p {
-//     font-family: "Nunito", sans-serif;
-//     text-align: justify;
-//     font-size: 1.3rem;
-//     margin-bottom: 3rem;
-//     line-height: 2rem;
-//   }
-// `;
-
-// export const IconContainer = styled.div`
-//   font-size: 3rem;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 1rem;
-
-//   i {
-//     transition: transform 1s ease;
-
-//     &:hover {
-//       transform: scale(1.2);
-//       color: var(--secondary-color);
-//     }
-//   }
-// `;
-

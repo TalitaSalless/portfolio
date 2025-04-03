@@ -9,7 +9,7 @@ export const CardsContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media (max-width: 1999px) {
+    @media (max-width: 1024px) {
       display: flex;
       flex-direction: column;
     }

@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
     :root {
-    --primary-color: #e8e8e8; 
+    --primary-color: #e8e8e8;
     --primary-purple: #C1A0FD;
     --secondary-purple: #5F37D5;
     --button-background: #1F1B1B;
@@ -40,5 +40,4 @@ export const GlobalStyles = createGlobalStyle`
         list-style: none;
     }
 `;
-
 

@@ -24,6 +24,8 @@ export const GlobalStyles = createGlobalStyle`
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        
+
         ${'' /* background-image: url("/assets/Background.png");
         background-size: cover;
         background-position: center;

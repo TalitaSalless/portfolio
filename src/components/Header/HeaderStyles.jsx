@@ -7,10 +7,16 @@ export const HeaderContainer = styled.header`
     align-items: center;
     padding: 2rem 5rem;
     background-color: transparent;
-
+    position: relative;
+    z-index: 1000;
 
     @media (max-width: 1023px) {
         padding: 2rem 3rem;
+    }
+
+    @media (max-width: 480px) {
+        padding: 1rem 1rem;
+
     }
 `;
 
@@ -20,6 +26,9 @@ export const HeaderName = styled.div`
 
     @media (max-width: 1023px) {
         font-size: 1.5rem;
+    }
+    @media (max-width: 480px) {
+        font-size: 0.9rem;
     }
 `;
 
@@ -61,6 +70,12 @@ export const NavbarItem = styled.li`
     @media (max-width: 1023px) {
         font-size: 1rem;
         margin: 0 1.5rem;
+    }
+    @media (max-width: 480px) {
+        display: block;
+        padding: 0.5rem 0.2rem;
+        font-size: 0.9rem;
+        margin: 0 0.4rem;
     }
 `;
 

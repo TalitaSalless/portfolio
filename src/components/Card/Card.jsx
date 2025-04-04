@@ -17,7 +17,7 @@ export function Card({ projectName, projectImage, projectLink, githubLink, proje
         <CardContainer>
             <CardContent>
                 <CardText>
-                    <h3>{projectName}</h3>
+                    <h1>{projectName}</h1>
                     <ProjectDescription>{projectDescription}</ProjectDescription>
 
                     <CardLinks>

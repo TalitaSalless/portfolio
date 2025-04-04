@@ -20,7 +20,18 @@
     }
 
     .icon {
-        
+
         margin-right: 1rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.75rem;
+        padding: 0.6em 1em;
+        border-radius: 25px;
+        width: 100%;
+        max-width: 250px;
+        .icon {
+        margin-right: 0.5rem;
+        }
     }
     `;

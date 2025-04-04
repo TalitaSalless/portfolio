@@ -1,12 +1,31 @@
 import styled from "styled-components";
+// @media (max-width: 480px) { ... }     // Smartphones pequenos
+// @media (max-width: 768px) { ... }     // Smartphones grandes e tablets pequenos
+// @media (max-width: 1024px) { ... }    // Tablets
+// @media (max-width: 1200px) { ... }    // Laptops menores
+
 
 export const ContainerHome = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+
+  /* width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
 `;
 
 export const ContainerInfos = styled.div`
+  width: 90%;
   height: 87vh;
   display: flex;
   align-items: center;
@@ -22,6 +41,22 @@ export const ContainerInfos = styled.div`
   @media (max-width: 1200px) {
     gap: 2rem;
   }
+
+  @media (max-width: 768px) {
+    height: auto;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  @media (max-width: 480px) {
+    height: 85vh;
+    width: 100%;
+    padding-top: 2rem;
+    flex-direction: column;
+    gap: 0;
+
+  }
 `;
 
 export const ProfileSection = styled.div`
@@ -31,6 +66,15 @@ export const ProfileSection = styled.div`
   justify-content: center;
   padding: 2rem;
   max-width: 50%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 100%;
+    padding: 0;
+  }
 `;
 
 export const ProfileImage = styled.img`
@@ -49,22 +93,45 @@ export const ProfileImage = styled.img`
     border: 4px solid var(--secondary-purple);
   }
 
-  @media (max-width: 1023px) {
-    width: 15rem;
-    height: 15rem;
-    &:active, &:focus {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(95, 55, 213, 0.6);
-    }
+  @media (min-width: 1440px) {
+    width: 22rem;
+    height: 22rem;
   }
+
   @media (max-width: 1200px) {
     width: 18rem;
     height: 18rem;
+
     &:active, &:focus {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(95, 55, 213, 0.6);
     }
   }
+
+  @media (max-width: 1023px) {
+    width: 15rem;
+    height: 15rem;
+
+    &:active, &:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(95, 55, 213, 0.6);
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  @media (max-width: 480px) {
+    width: 10rem;
+    height: 10rem;
+  }
+
+    @media (max-width: 360px) {
+      width: 8rem;
+      height: 8rem;
+    }
 `;
 
 export const AboutSection = styled.div`
@@ -88,6 +155,17 @@ export const AboutSection = styled.div`
 
   @media (max-width: 1023px) {
     padding: 0;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+
+    max-width: 100%;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -144,6 +222,17 @@ export const AboutText = styled.div`
       transform: translateY(0);
     }
   }
+  @media (min-width: 1440px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      max-width: 65rem;
+    }
+  }
 
   @media (max-width: 1023px) {
     h1 {
@@ -155,6 +244,7 @@ export const AboutText = styled.div`
       line-height: 1.8rem;
     }
   }
+
   @media (max-width: 1200px) {
     h1 {
       font-size: 1.6rem;
@@ -165,6 +255,40 @@ export const AboutText = styled.div`
       line-height: 1.8rem;
     }
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      padding: 0 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  @media (max-width: 360px) {
+    h1 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+    }
+}
 `;
 
 export const IconContainer = styled.div`
@@ -210,8 +334,17 @@ export const IconContainer = styled.div`
     }
   }
 
+  @media (min-width: 1440px) {
+    gap: 2rem;
+
+    i {
+      font-size: 3rem;
+    }
+  }
+
   @media (max-width: 1023px) {
     gap: 1.2rem;
+
     i {
       font-size: 1.8rem;
       display: flex;
@@ -231,4 +364,33 @@ export const IconContainer = styled.div`
     }
   }
 
+  @media (max-width: 768px) {
+    gap: 0.7rem;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    gap: 0.6rem;
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 360px) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    i {
+      font-size: 1rem;
+    }
+}
+
 `;
+
+

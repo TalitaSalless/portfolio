@@ -20,6 +20,7 @@
     }
 
     .icon {
+        
         margin-right: 1rem;
     }
     `;

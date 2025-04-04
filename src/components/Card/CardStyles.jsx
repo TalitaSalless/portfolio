@@ -8,6 +8,11 @@ export const CardContainer = styled.div`
     border-radius: 1rem;
     margin-bottom: 0.8rem;
     background-color: rgba(0, 0, 0, 0.195);
+
+    @media (max-width: 1200px) {
+        margin-top: 1rem;
+        width: 90%;
+    }
 `;
 
 export const CardContent = styled.div`
@@ -19,6 +24,9 @@ export const CardContent = styled.div`
     height: 100%;
     padding: 0 0.1rem;
     gap: 0.5rem;
+    @media (max-width: 1200px) {
+        gap: 0;
+    }
 `;
 
 export const CardText = styled.div`
@@ -42,6 +50,11 @@ export const ProjectDescription = styled.p`
     padding: 2rem 1rem;
     border-radius: 1rem;
     text-align: justify;
+
+    @media (max-width: 1200px) {
+        margin-top: 1rem;
+        width: 90%;
+    }
 `;
 
 export const CardImage = styled.div`

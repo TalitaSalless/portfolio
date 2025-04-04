@@ -4,10 +4,6 @@ export const ContainerHome = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  /* background-image: url("/assets/back-new.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
 `;
 
 export const ContainerInfos = styled.div`
@@ -19,12 +15,14 @@ export const ContainerInfos = styled.div`
   border-radius: 2rem;
   gap: 8rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     gap: 5rem;
-    height: 100%;
+    margin-top: -2rem;
+  }
+  @media (max-width: 1200px) {
+    gap: 2rem;
   }
 `;
-
 
 export const ProfileSection = styled.div`
   display: flex;
@@ -54,6 +52,14 @@ export const ProfileImage = styled.img`
   @media (max-width: 1023px) {
     width: 15rem;
     height: 15rem;
+    &:active, &:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(95, 55, 213, 0.6);
+    }
+  }
+  @media (max-width: 1200px) {
+    width: 18rem;
+    height: 18rem;
     &:active, &:focus {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(95, 55, 213, 0.6);
@@ -149,6 +155,16 @@ export const AboutText = styled.div`
       line-height: 1.8rem;
     }
   }
+  @media (max-width: 1200px) {
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+    }
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -195,6 +211,7 @@ export const IconContainer = styled.div`
   }
 
   @media (max-width: 1023px) {
+    gap: 1.2rem;
     i {
       font-size: 1.8rem;
       display: flex;
@@ -208,4 +225,10 @@ export const IconContainer = styled.div`
       filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.3));
     }
   }
+  @media (max-width: 1200px) {
+    i {
+      font-size: 1.9rem;
+    }
+  }
+
 `;

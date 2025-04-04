@@ -10,7 +10,13 @@ export const CardsContainer = styled.div`
     grid-template-columns: 1fr 1fr;
 
     @media (max-width: 1024px) {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
-  `;
+    @media (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+`;

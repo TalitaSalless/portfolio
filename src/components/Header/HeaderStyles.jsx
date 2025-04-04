@@ -5,11 +5,12 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 2rem 5rem;
     background-color: transparent;
 
+
     @media (max-width: 1023px) {
-        padding: 1rem 1rem;
+        padding: 2rem 3rem;
     }
 `;
 
@@ -18,7 +19,7 @@ export const HeaderName = styled.div`
     font-weight: bold;
 
     @media (max-width: 1023px) {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 `;
 
@@ -45,9 +46,9 @@ export const NavbarList = styled.ul`
 `;
 
 export const NavbarItem = styled.li`
-    margin: 0 1rem;
+    margin: 0 3rem;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
     a {
         color: var(--primary-color);
@@ -58,57 +59,9 @@ export const NavbarItem = styled.li`
         }
     }
     @media (max-width: 1023px) {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin: 0 1.5rem;
     }
 `;
 
-export const SocialMediaContainer = styled.div`
-    margin-right: 1rem;
-`;
 
-
-export const SocialMediaList = styled.ul`
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-`;
-
-export const SocialMediaItem = styled.li`
-    margin: 0 0.8rem;
-    font-size: 1.4rem; /* Tamanho um pouco maior para destaque */
-    padding: 0.4rem;
-    border-radius: 50%;
-    border: 2px solid transparent; /* Evita contraste excessivo */
-    background: rgba(255, 255, 255, 0.1); /* Fundo sutil */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
-
-    a {
-        color: var(--primary-color);
-        transition: color 0.3s ease-in-out;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    &:hover {
-        background: var(--secondary-purple); /* Destaque ao passar o mouse */
-        transform: scale(1.1); /* Efeito de leve crescimento */
-        box-shadow: 0 0 12px rgba(95, 55, 213, 0.6); /* Brilho ao redor */
-
-        a {
-            color: var(--primary-color) /* Ícone fica branco no hover */
-        }
-    }
-
-    @media (max-width: 1023px) {
-        font-size: 1.1rem;
-
-        a {
-            font-size: 1rem;
-        }
-    }
-`;

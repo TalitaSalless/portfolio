@@ -25,7 +25,12 @@ export function Home() {
                         <AboutText>
                             <h1>Desenvolvedora front-end</h1>
                             <p>
-                            Com sólida experiência em JavaScript, React.js, HTML, CSS e APIs REST, sou apaixonada por criar interfaces modernas, responsivas e acessíveis, sempre focando em proporcionar uma excelente experiência para o usuário. Trabalho com as melhores práticas de desenvolvimento e estou comprometida em entregar soluções eficientes e de alta qualidade.
+                            Como desenvolvedora, tenho experiência com HTML, CSS, JavaScript e React, além de sólidos conhecimentos em UI/UX, consumo de APIs REST, Git e metodologias ágeis. Tenho investido constantemente no aprimoramento técnico com tecnologias como TypeScript, Tailwind CSS e testes automatizados.
+
+                            Neste portfólio, você encontrará projetos que refletem não só minhas habilidades técnicas, mas também meu compromisso com a evolução contínua, minha criatividade e meu propósito: construir produtos digitais com impacto, propósito e qualidade.
+
+                            Se quiser conversar ou conhecer mais sobre meu trabalho, será um prazer trocar ideias com você!
+
                             </p>
                             <IconContainer>
                                 <i className="fab fa-html5"></i>

@@ -21,6 +21,9 @@ export const ContainerHome = styled.div`
   @media (max-width: 768px) {
     padding: 1rem;
   }
+  @media (max-width: 360px) {
+
+  }
 
 `;
 
@@ -55,7 +58,21 @@ export const ContainerInfos = styled.div`
     padding-top: 2rem;
     flex-direction: column;
     gap: 0;
+    margin-bottom: 2rem;
+  }
 
+  @media (max-width: 414px) {
+    margin-top: 5rem;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  @media (max-width: 360px) {
+    width: 100%;
+    margin: 6rem 0;
+    flex-direction: column;
+    gap: 0;
   }
 `;
 

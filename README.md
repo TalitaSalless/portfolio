@@ -14,12 +14,6 @@
 
 ---
 
-## 🖼️ Preview
-
-![Preview do Portfólio](./screenshot.png)
-
----
-
 ## 🧩 Tecnologias Utilizadas
 
 - ⚛️ React  

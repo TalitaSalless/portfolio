@@ -28,12 +28,11 @@ export const Card = styled.div`
 	}
 
 	@media (max-width: 480px) {
-	
+
 	width: 95%;
 	padding: 1rem;
 	margin: 1rem 0;
 }
-
 `;
 
 export const CardContent = styled.div`
@@ -58,7 +57,7 @@ export const CardInformations = styled.div`
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-`
+`;
 
 export const CardTitle = styled.h1`
     font-size: 2.2rem;
@@ -86,8 +85,8 @@ export const CardTitle = styled.h1`
 		}
 	}
 
-	@media (max-width: 1023px) {
-		font-size: 1.4rem;
+	@media (max-width: 1024px) {
+		font-size: 1.5rem;
 	}
 
 	@media (max-width: 480px) {
@@ -104,8 +103,8 @@ export const CardText = styled.p`
 	color: var(--primary-color);
 	line-height: 2rem;
 
-	@media (max-width: 1023px) {
-		font-size: 0.8rem;
+	@media (max-width: 1024px) {
+		font-size: 0.9rem;
 	}
 	@media (max-width: 480px) {
 		font-size: 0.9;
@@ -122,8 +121,7 @@ export const Form = styled.form`
 	@media (max-width: 768px) {
 		align-items: center;
 		width: 100%;
-}
-
+	}
 `;
 
 export const InputWrapper = styled.div`
@@ -138,6 +136,7 @@ export const InputWrapper = styled.div`
 	&:focus-within {
 		box-shadow: 0 0 8px var(--primary-color);
 	}
+
 	@media (max-width: 768px) {
 		width: 100%;
 	}

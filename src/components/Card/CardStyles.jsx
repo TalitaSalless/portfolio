@@ -63,13 +63,23 @@ export const CardText = styled.div`
 
     h1 {
         color: var(--primary-purple);
+        text-align: center;
+        padding: 0 1rem ;
+    }
+
+    @media (max-width: 1024px) {
+        width: 50%;
+
+        h1 {
+            font-size: 1.5rem;
+        }
     }
 
     @media (max-width: 768px) {
         width: 100%;
-        text-align: center;
 
-        h3 {
+
+        h1 {
         font-size: 1.4rem;
         }
     }
@@ -131,6 +141,15 @@ export const CardImage = styled.div`
 
     img:hover {
         transform: translateY(-5px);
+    }
+
+    @media (max-width: 1024px) {
+        width: 50%;
+
+        img {
+        width: 90%;
+        height: auto;
+        }
     }
 
     @media (max-width: 768px) {

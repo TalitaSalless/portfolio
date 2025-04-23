@@ -67,10 +67,11 @@ export const NavbarItem = styled.li`
             color: var(--secondary-purple);
         }
     }
-    @media (max-width: 1023px) {
+    @media (max-width: 1024px) {
         font-size: 1rem;
         margin: 0 1.5rem;
     }
+    
     @media (max-width: 480px) {
         display: block;
         padding: 0.5rem 0.2rem;

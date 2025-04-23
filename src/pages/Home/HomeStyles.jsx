@@ -37,6 +37,10 @@ export const ContainerInfos = styled.div`
   border-radius: 2rem;
   gap: 8rem;
 
+  @media (max-width: 1245px) {
+    height: 80vh;
+  }
+
   @media (max-width: 1023px) {
     gap: 5rem;
     margin-top: -2rem;
@@ -125,9 +129,9 @@ export const ProfileImage = styled.img`
     }
   }
 
-  @media (max-width: 1023px) {
-    width: 15rem;
-    height: 15rem;
+  @media (max-width: 1024px) {
+    width: 13rem;
+    height: 13rem;
 
     &:active, &:focus {
     transform: scale(1.05);
@@ -251,17 +255,6 @@ export const AboutText = styled.div`
     }
   }
 
-  @media (max-width: 1023px) {
-    h1 {
-      font-size: 1.7rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-      line-height: 1.8rem;
-    }
-  }
-
   @media (max-width: 1200px) {
     h1 {
       font-size: 1.6rem;
@@ -270,6 +263,18 @@ export const AboutText = styled.div`
     p {
       font-size: 1.1rem;
       line-height: 1.8rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
     }
   }
 
@@ -359,22 +364,7 @@ export const IconContainer = styled.div`
     }
   }
 
-  @media (max-width: 1023px) {
-    gap: 1.2rem;
 
-    i {
-      font-size: 1.8rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-    }
-    &:active, &:focus {
-      transform: scale(1);
-      color: var(--secondary-purple);
-      filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.3));
-    }
-  }
   @media (max-width: 1200px) {
     i {
       font-size: 1.9rem;
@@ -386,6 +376,21 @@ export const IconContainer = styled.div`
 
     i {
       font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    gap: 0.8rem;
+    i {
+      font-size: 1.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &:active, &:focus {
+      transform: scale(1);
+      color: var(--secondary-purple);
+      filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.3));
     }
   }
 
